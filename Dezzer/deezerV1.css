@@ -1,0 +1,80 @@
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Deezer Sans", sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    width: auto;
+    height: 100px;
+    gap: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: large;
+    transition: all 0.3s;
+    margin-left: 50px ;
+}
+
+.nav a:hover {
+    background-color: #a238ff;
+    color: black; 
+    transform: scale(1.2);
+}
+
+.nav-logo {
+    height: 5px; 
+    width: fit-content;
+}
+hr {
+    width: 50%;
+    border: none;     
+    height: 1px;       
+    background-color: white;
+}
+.main{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 3%;
+    gap: 5rem;
+}
+.main-gif{
+    border: 3px solid #a238ff; 
+    border-radius: 10px; 
+}
+.text-p{
+    font-size: 20px;
+}
+.main-btn{
+    margin-right: 100px ;
+    margin-top: 150px;
+}
+.button-main{
+   display: inline-block;
+    background-color: #a238ff;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;  /* coins arrondis style moderne */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 5px 15px rgba(162, 56, 255, 0.4); /* léger relief */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+
+}
+.button-main:hover{
+    background-color: white;
+    color: #a238ff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(162, 56, 255, 0.6);
+}
+
