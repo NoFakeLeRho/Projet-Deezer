@@ -46,6 +46,7 @@ hr {
     margin-left: 20%;
     margin-top: 3%;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 .main-gif{
     border: 3px solid #a238ff; 
@@ -54,22 +55,21 @@ hr {
 .text-p{
     font-size: 20px;
 }
-.main-btn{
-    margin-right: 100px ;
-    margin-top: 150px;
-}
+
 .button-main{
-   display: inline-block;
+    display: flex;
     background-color: #a238ff;
     color: white;
-    padding: 12px 30px;
-    border-radius: 25px;  /* coins arrondis style moderne */
+    padding: 15px 50px;
+    border-radius: 25px;  
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
-    box-shadow: 0 5px 15px rgba(162, 56, 255, 0.4); /* léger relief */
+    box-shadow: 0 5px 15px rgba(162, 56, 255, 0.4); 
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-
+    top: -12rem;
+    left: 60rem;
+    position: relative;
 }
 .button-main:hover{
     background-color: white;
@@ -78,3 +78,22 @@ hr {
     box-shadow: 0 8px 20px rgba(162, 56, 255, 0.6);
 }
 
+.music{
+    display: flex;
+    margin-left:20%;
+    margin-right: 10% ;
+    margin-top: -3%;
+    gap: 5rem;
+    /* background-color: #a238ff6e; */
+    padding: 20px;
+}
+.music img{
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    &:hover{
+        background-color: white;
+        color: #a238ff;
+        transform: scale(1.1);
+        box-shadow: 0 8px 20px rgba(162, 56, 255, 0.6);
+    }
+}

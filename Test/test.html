@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Image avec son</title>
+<style>
+  .music-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 200px;
+    font-family: Arial, sans-serif;
+  }
+
+  .music-item img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .music-item:hover img {
+    transform: scale(1.05); /* effet zoom au survol */
+  }
+
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .music-item:hover .description {
+    opacity: 1;
+  }
+
+  .description h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .description p {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: #bbb; /* artiste en gris clair */
+  }
+</style>
+</head>
+<body>
+<div class="music-item">
+  <img src="beanie.jpg" alt="Die With a Smile">
+  <div class="description">
+    <h4>Die With a Smile</h4>
+    <p>Lady Gaga & Bruno Mars</p>
+  </div>
+</div>
+</body>
+</html>
